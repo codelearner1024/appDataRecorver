@@ -16,7 +16,7 @@ from _overlapped import NULL
 from json.decoder import NaN
 from _datetime import datetime
 
-class Analycis():
+class LargeScreenEntityHandle():
     def __init__(self):
 #         mongodb://root:gold123456@10.8.1.10:27017/messageCenter
         
@@ -26,7 +26,7 @@ class Analycis():
         self.CONSTANT_EVENTTIME = 'eventTime';
         
         
-    def get_storage_count(self):
+    def field_event_time_init(self):
 #         storage = self.collection.find({'messageType': 'STORAGE'},{'_id': False})
         storage = self.collection.find({'messageType': 'BUSINESS'},{'_id': False})
 #         storage = self.collection.find({"_id": ObjectId("5de9f3d6219d5821dc031e08")},{'_class':False});
@@ -68,9 +68,5 @@ class Analycis():
                 print(error);
 
 if __name__ == '__main__':
-    analycis = Analycis()
-    analycis.get_storage_count()
-    # content = analycis.get_describe()
-    # analycis.get_wordcloud(content)
-    # # attr,value = analycis.get_degree()
-    # # analycis.showPie('             ' + '学历分布',attr,value)
+    handle = LargeScreenEntityHandle()
+    handle.field_event_time_init()
