@@ -8,7 +8,7 @@ from _datetime import datetime
 import json
 import pymongo
 import settings
-
+# 处理LargeScreenEntity表的相应逻辑
 class LargeScreenEntityHandle():
 
     def __init__(self):
