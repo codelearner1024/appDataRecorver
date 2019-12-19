@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# svn maven pyproject ignore
+.project
+.pydevproject
+.settings/
+.svn/
